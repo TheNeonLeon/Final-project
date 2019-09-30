@@ -20,10 +20,6 @@ body{
 header{
     padding-bottom: 33%;
 }
-.content{
-    display: flex;
-    justify-content: flex-end;
-}
 .logo{ 
     max-width: 350%;
     height: auto;
@@ -111,7 +107,7 @@ footer{
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     padding-top: 10%;
-    padding-bottom: 35%;
+    padding-bottom: 10%;
 }
 .footer-heading{
     display: grid;
@@ -143,6 +139,14 @@ button{
     font-weight: bold;
     
 }
+.social-media-icons{
+    grid-row: 5 / 5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 5%;
+}
 /*Desktop size*/
 @media only screen and (min-width: 1024px){
   .nav-links{
@@ -159,6 +163,15 @@ button{
   .man-circle{
       padding-top: 20%;
   }
+  .box-1{
+    grid-column:  3 / 3;
+  }
+  button{
+      grid-column: 3 / 3;
+      max-width: 30%;
+      margin-left: 70%;
+      
+  }
 }
 @media only screen and (min-width: 700px){
     .nav-links{
@@ -172,6 +185,7 @@ button{
         max-width: 60%;
         height: auto;
     }
+    
 }
 
 /*CSS code targeting Location page*/
